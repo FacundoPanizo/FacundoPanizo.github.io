@@ -1,0 +1,36 @@
+.desafio1 {
+    color: blue;
+    background-color: yellow;
+}
+
+ul li {
+    color:green
+}
+
+.titulo {
+    color: green;
+}
+
+#parrafo {
+    color:green
+}
+
+table {
+    border: 3px solid;
+   }
+
+.table2{
+    font-style: italic;
+}
+
+th {
+background-color:orange;
+border: 1px solid;
+color: green;
+}
+
+tr, td {
+    border: 1px solid;
+    color: green;
+    }
+
