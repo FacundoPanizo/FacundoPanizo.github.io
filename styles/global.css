@@ -1,18 +1,72 @@
-.desafio1 {
-    color: blue;
-    background-color: yellow;
+div p.desafio2 {
+    color:#0033ff ;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-style:italic;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.navBar {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: outside;
+    text-decoration: none;
+}
+
+/* nav ul li a.navBar{
+    text-decoration: none;
+} */
+
+
+
+body {
+
+    background-image: url(https://images.unsplash.com/photo-1575330739287-90c6a473f9a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80);
+    background-color: rgb(255, 255, 255);
+    background-repeat: repeat-y;
+    background-size: 60%;
+    background-position: center;
+    text-align: center;
 }
 
 ul li {
-    color:green
+    color:green;
 }
 
 .titulo {
-    color: green;
+    color: rgb(0, 0, 0);
 }
 
 #parrafo {
-    color:green
+
+    display: block;
+    color:#0033ff ;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-style:italic;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+aside.tablita{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 table {
