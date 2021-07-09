@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 div p.desafio2 {
     color:#0033ff ;
     letter-spacing: 1px;
@@ -20,6 +25,7 @@ div p.desafio2 {
     list-style-type: none;
     list-style-position: outside;
     text-decoration: none;
+    overflow: hidden;
 }
 
 /* nav ul li a.navBar{
@@ -29,7 +35,6 @@ div p.desafio2 {
 
 
 body {
-
     background-image: url(https://images.unsplash.com/photo-1575330739287-90c6a473f9a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80);
     background-color: rgb(255, 255, 255);
     background-repeat: repeat-y;
@@ -130,3 +135,75 @@ tr, td {
 .logo {
     display: inline-block;
 }
+
+.zoom {
+    display: block;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  } */
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdownMenu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdownMenu a:hover {
+    background-color: #ddd;
+  }
+
+.dropdown:hover .dropdownMenu {
+    display: block;
+  }
+
+
+/* .padre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 20vw;
+}
+
+.hijo {
+  background-color: rosybrown;
+  width: 20vw;
+  height: 20vw;
+  border: 1px solid black;
+} */
