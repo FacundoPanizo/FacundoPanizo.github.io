@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 div p.desafio2 {
@@ -35,7 +36,7 @@ div p.desafio2 {
 
 
 body {
-    background-image: url(https://images.unsplash.com/photo-1575330739287-90c6a473f9a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1575330739287-90c6a473f9a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80); */
     background-color: rgb(255, 255, 255);
     background-repeat: repeat-y;
     background-size: 60%;
@@ -190,6 +191,32 @@ tr, td {
     display: block;
   }
 
+.galleryLinks{ 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-evenly;
+  order: inherit;
+  flex-shrink: inherit;
+}
+
+.galleryImg{ 
+  flex-basis: 300px;
+  margin: 10px;
+}
+
+.galleryImg img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 762px) {
+  .galleryImg {
+    flex-basis: 90%;
+  }
+}
 
 /* .padre {
   display: flex;
