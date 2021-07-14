@@ -27,6 +27,14 @@ div p.desafio2 {
     list-style-position: outside;
     text-decoration: none;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: inherit;
+    flex-basis: inherit;
 }
 
 /* nav ul li a.navBar{
@@ -59,7 +67,6 @@ ul {
   }
   
 li {
-    float: right;
     border-right: 1px solid #bbb;
   }
   
