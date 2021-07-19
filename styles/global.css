@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 div p.desafio2 {
@@ -51,6 +51,7 @@ body {
     background-position: center;
     text-align: center;
     background-position-y: 8px;
+    background-color: rgb(41, 3, 41);
 }
 
 .active {
@@ -198,46 +199,146 @@ tr, td {
     display: block;
   }
 
-.galleryLinks{ 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: space-evenly;
-  order: inherit;
-  flex-shrink: inherit;
+.galleryContainer {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+  grid-auto-rows: minmax(200px, auto) ; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+  grid-template-areas: 
+  " scorpion  scorpion transformer groot"
+  " scorpion scorpion calaveras calaveras"
+  " ironman yoda calaveras calaveras";
+  /* justify-content: center;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center; */
+} 
+.galleryItem {
+  /* align-items: center;
+  justify-content: center; */
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  border: solid 1px rgb(255, 255, 255);
+  display: grid;
 }
-
-.galleryImg{ 
-  flex-basis: 300px;
-  margin: 10px;
+.galleryItem:hover {
+  filter: opacity(0.9);
+  transform: scale(1); 
 }
-
-.galleryImg img {
+.galleryItem img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.galleryItem:nth-child(1) {
+  grid-row: 1 / span 3;
+  grid-column: 1 / 3;
+  grid-area: scorpion;
+  background-color: rgba(0,0,0,0.2);
+  justify-items:stretch;
+
+}
+.galleryItem:nth-child(2) {
+  grid-area: groot;
+  background-color: rgba(0,0,0,0.2);
+}
+.galleryItem:nth-child(3) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-area: transformer;
+  background-color: rgba(0,0,0,0.2);
+}
+.galleryItem:nth-child(4) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-area: yoda;
+  background-color: rgba(0,0,0,0.2);
+}
+.galleryItem:nth-child(5) {
+  grid-area: ironman;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: rgba(0,0,0,0.2);
+}
+.galleryItem:nth-child(6) {
+  grid-area: calaveras;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
 }
 
-@media only screen and (max-width: 762px) {
-  .galleryImg {
+
+
+
+@media only screen and (max-width: 768px) {
+  .galleryItem {
     flex-basis: 90%;
+  }
+  body {
+    background-color: rgb(146, 57, 146);
+  }
+
+  .navBar {
+    display: flex;
+    flex-basis: 90%;
+    overflow: hidden;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+  }
+  .heisenberg {
+    width: 400px;
   }
 }
 
-/* .padre {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  height: 20vw;
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: violet;
+    align-items: center;
+    width: inherit;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+li {
+    border-right: 1px solid #bbb;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111;
+  }
+
+  .navBar {
+    display: flex;
+    flex-basis: 90%;
+    overflow: hidden;
+    flex-wrap:wrap
+  }
+  .heisenberg {
+    box-sizing: border-box;
+    width: 200px;
+    
+  }
 }
 
-.hijo {
-  background-color: rosybrown;
-  width: 20vw;
-  height: 20vw;
-  border: 1px solid black;
-} */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  body {
+    background-color: rgb(71, 17, 71);
+  }
+
+
+}
