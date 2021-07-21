@@ -35,6 +35,19 @@ div p.desafio2 {
     flex-wrap: wrap;
     flex-shrink: inherit;
     flex-basis: inherit;
+    margin-left: auto;
+}
+
+#logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction:row;
+  text-align: left;
+  margin-left: auto;
+  margin-block-start: 0%;
 }
 
 /* nav ul li a.navBar{
@@ -55,7 +68,7 @@ body {
 }
 
 .active {
-    background-color: green;
+    background-color: rgb(0, 0, 0);
 }
 
 ul {
@@ -63,8 +76,8 @@ ul {
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    background-color: #333;
-    ;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(94,9,121,1) 35%, rgb(204, 0, 255) 100%)
   }
   
 li {
@@ -150,7 +163,22 @@ tr, td {
 }
 
 .zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    overflow: hidden;
+    transition: 1s ease;
+    filter: brightness(100%);
+}
+.zoomDerecha:hover {
+  overflow: hidden;
+  transition: 1s ease;
+  filter: brightness(100%);
+  transform: translate(-200px, 50px);
+}
+.zoomIzq:hover {
+  overflow: hidden;
+  transition: 1s ease;
+  filter: brightness(100%);
+  transform: translateX(200px);
 }
 
 .dropdown {
@@ -276,7 +304,7 @@ tr, td {
     flex-basis: 90%;
   }
   body {
-    background-color: rgb(146, 57, 146);
+    background-color: rgb(168, 55, 168);
   }
 
   .navBar {
@@ -330,7 +358,7 @@ li a:hover {
   }
   .heisenberg {
     box-sizing: border-box;
-    width: 200px;
+    width: 300px;
     
   }
 }
@@ -338,7 +366,18 @@ li a:hover {
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   body {
     background-color: rgb(71, 17, 71);
+
   }
 
+  .parrafo {
+    color: rgb(247, 232, 232);
+  }
+
+  .galleryItem img {
+     background-image: linear-gradient(to left red yellow);
+  }
+  
 
 }
+
+
